@@ -1,0 +1,84 @@
+.Navigation{
+    position: fixed;
+    width: 27%;
+    margin-left: -15px;
+    height: 100%;
+    display: flex;
+    z-index: 100;
+    padding: 0;
+    transition: transform 0.3s ease-out;
+}
+
+.LeftNav{
+    background-color: rgba(241, 241, 238, 0.938);
+    padding: 0;
+    overflow: scroll;
+}
+
+.Open{
+    transform: translateX(0);
+    width: 27%;
+}
+
+.Close{
+    transform: translateX(-90%);
+}
+
+.SearchForm{
+    padding: 15px;
+    background-color: rgba(223, 223, 221, 0.938);
+    width: 100%;
+    margin: 0;
+}
+
+.NavMenus{
+    padding: 25px;
+    padding-top: 40px;
+}
+
+.SubNav{
+    list-style: none;
+}
+
+.MenuHeader{
+    border-bottom: 3px solid #f06542;
+    width: fit-content;
+}
+
+.NavLink{
+    text-transform: uppercase;
+    color: black;
+}
+
+.Toggler{
+    margin-top: 8px;
+    padding-left: 25px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.ToggleIcon{
+    width:28px;
+    height: 5px;
+    background-color: #f06542;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+@media (max-width: 991px){
+    .Navigation{
+        width: 80%;
+    }
+
+    .Open{
+        transform: translateX(0);
+        width: 80%;
+    }
+
+    .Close{
+        transform: translateX(-90%);
+    }
+}
+
